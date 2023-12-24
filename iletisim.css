@@ -1,0 +1,86 @@
+.iletisim-sci {
+    position: absolute;
+    left: 500px;
+    bottom: 400px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iletisim-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .2s;
+    z-index: 2;
+
+}
+
+.iletisim-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 100px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.iletisim-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.iletisim-sci a:hover {
+    color: #081b29;
+}
+.iletisim-sci a:hover::before {
+    width: 100%;
+}
+
+.iletisim-imgHover {
+    position: absolute;
+    top: 160px;
+    bottom: 40px;
+    right: 150px;
+    width: 490px;
+    background: transparent;
+    transition: 3s;
+}
+
+.iletisim-imgHover:hover{
+background: #081b29;
+opacity: .8;
+}
+.iletisim-imgHover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .3s;
+    z-index: 2;
+
+}
